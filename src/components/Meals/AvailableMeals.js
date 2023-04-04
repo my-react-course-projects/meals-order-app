@@ -33,7 +33,9 @@ const AvailableMeals = () => {
 
     // helper constant to keep the below jsx code lean
     const mealsList = DUMMY_MEALS.map((meal) => (
-      <MealItem key={meal.id} 
+      <MealItem 
+                id={meal.id} 
+                key={meal.id} 
                 name={meal.name} 
                 description={meal.description}
                 price={meal.price} 
